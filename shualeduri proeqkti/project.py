@@ -19,7 +19,7 @@ class Calculator(BaseCalculator):
         
 #ისტორიის ფაილში შენახვა 
 def save_history(history):
-    with open("history.txt", "w", encoding="utf-8") as file:
+    with open("history.txt", "w") as file:
         for item in history:
             file.write(item + "\n")
 
